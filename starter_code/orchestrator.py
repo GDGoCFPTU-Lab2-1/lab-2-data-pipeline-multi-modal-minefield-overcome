@@ -35,14 +35,50 @@ def main():
     output_path = os.path.join(os.path.dirname(SCRIPT_DIR), "processed_knowledge_base.json")
     # ----------------------------------------------
 
-    # TODO: Call each processing function (extract_pdf_data, clean_transcript, etc.)
-    # TODO: Run quality gates (run_quality_gate) before adding to final_kb
-    # TODO: Save final_kb to output_path using json.dump
-    
-    # Example:
-    # doc = extract_pdf_data(pdf_path)
-    # if doc and run_quality_gate(doc):
-    #     final_kb.append(doc)
+    sources = []
+
+    pdf_doc = extract_pdf_data(pdf_path)
+    if pdf_doc:
+        sources.append(pdf_doc)
+
+    transcript_doc = clean_transcript(trans_path)
+    if transcript_doc:
+        sources.append(transcript_doc)
+
+    html_docs = parse_html_catalog(html_path)
+    if html_docs:
+        sources.extend(html_docs)
+
+    csv_docs = process_sales_csv(csv_path)
+    if csv_docs:
+        sources.extend(csv_docs)
+
+    code_doc = extract_logic_from_code(code_path)
+    if code_doc:
+        sources.append(code_doc)
+
+    for source in sources:
+        if source is None:
+            continue
+        if isinstance(source, list):
+            docs = source
+        else:
+            docs = [source]
+
+        for doc in docs:
+            if not isinstance(doc, dict):
+                continue
+            if run_quality_gate(doc):
+                final_kb.append(doc)
+            else:
+                print(f"Rejected by quality gate: {doc.get('document_id')}")
+
+    try:
+        with open(output_path, 'w', encoding='utf-8') as f:
+            json.dump(final_kb, f, ensure_ascii=False, indent=2)
+        print(f"Wrote {len(final_kb)} documents to {output_path}")
+    except Exception as e:
+        print(f"Failed to write output JSON: {e}")
 
     end_time = time.time()
     print(f"Pipeline finished in {end_time - start_time:.2f} seconds.")

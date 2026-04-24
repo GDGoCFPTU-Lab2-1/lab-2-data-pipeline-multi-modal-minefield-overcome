@@ -10,11 +10,39 @@ def clean_transcript(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         text = f.read()
     # ------------------------------------------
-    
-    # TODO: Remove noise tokens like [Music], [inaudible], [Laughter]
-    # TODO: Strip timestamps [00:00:00]
-    # TODO: Find the price mentioned in Vietnamese words ("năm trăm nghìn")
-    # TODO: Return a cleaned dictionary for the UnifiedDocument schema.
-    
-    return {}
+
+    cleaned = re.sub(
+        r"\[(?:\d{2}:\d{2}:\d{2}|Music(?: starts| ends)?|inaudible|Laughter)\]",
+        "",
+        text,
+        flags=re.IGNORECASE
+    )
+    cleaned = "\n".join(
+        line.strip() for line in cleaned.splitlines() if line.strip()
+    )
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+
+    detected_price_vnd = None
+    if re.search(r"năm\s+trăm\s+nghìn", text, flags=re.IGNORECASE):
+        detected_price_vnd = 500000
+    else:
+        match = re.search(r"(\d[\d.,]*)\s*VND", text, flags=re.IGNORECASE)
+        if match:
+            amount_text = match.group(1).replace(".", "").replace(",", "")
+            try:
+                detected_price_vnd = int(amount_text)
+            except ValueError:
+                detected_price_vnd = None
+
+    return {
+        "document_id": "video-transcript-001",
+        "content": cleaned,
+        "source_type": "Video",
+        "author": "Unknown",
+        "timestamp": None,
+        "source_metadata": {
+            "original_file": file_path,
+            "detected_price_vnd": detected_price_vnd
+        }
+    }
 

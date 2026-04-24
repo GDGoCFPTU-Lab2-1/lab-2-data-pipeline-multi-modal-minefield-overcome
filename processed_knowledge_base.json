@@ -1,0 +1,455 @@
+[
+  {
+    "document_id": "pdf-doc-001",
+    "content": "Summary: This Purchase Order (No. 2182354) from SNC Lavalin O&M Inc., dated November 2, 2023, is issued to ADVANCED PROPERTY SYSTEMS LTD. for routine maintenance. The order includes a general maintenance call and mileage to address a stuck door latch at 10370 Teresa Road in Lake Country. The total amount for this service, including repair and documentation, is $51.85. The subcontractor is reminded to remove and return all mail and locks from equipment. ",
+    "source_type": "PDF",
+    "author": "SNC Lavalin O&M Inc.",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "lecture_notes.pdf"
+    }
+  },
+  {
+    "document_id": "video-transcript-001",
+    "content": "[Speaker 1]: Chào mừng các bạn đến với buổi học hôm nay về Data Pipeline Engineering. [Speaker 1]: Hôm nay chúng ta sẽ nói về việc xử lý dữ liệu phi cấu trúc, ví dụ như PDF và Video. [Speaker 1]: Một vấn đề lớn là Semantic Drift. Các bạn có biết không? [Speaker 2]: Dạ em có nghe qua, nhưng nó có liên quan gì đến Zillow không ạ? [Speaker 1]: Có chứ! Zillow là ví dụ điển hình của việc mô hình bị hỏng do dữ liệu đầu vào thay đổi. [Speaker 1]: Đừng để mô hình của bạn trở thành 'rác vào, rác ra'. [Speaker 1]: À, một lưu ý nhỏ cho bài tập: Giá của sản phẩm VinAI Pro là năm trăm nghìn VND. Nhớ nhé, 500,000 VND. [Speaker 1]: [Speaker 1]: Bây giờ chúng ta hãy bắt đầu thực hành.",
+    "source_type": "Video",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\demo_transcript.txt",
+      "detected_price_vnd": 500000
+    }
+  },
+  {
+    "document_id": "html-SP-001",
+    "content": "Product SP-001: VinAI Laptop Pro 14\" in category Laptop. Listed price: 28,500,000 VND. Stock: 45. Rating: 4.8/5.",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\product_catalog.html",
+      "product_id": "SP-001",
+      "name": "VinAI Laptop Pro 14\"",
+      "category": "Laptop",
+      "price_vnd": 28500000.0,
+      "stock": 45,
+      "rating": "4.8/5"
+    }
+  },
+  {
+    "document_id": "html-SP-002",
+    "content": "Product SP-002: Chuột không dây ErgoMax in category Phụ kiện. Listed price: N/A. Stock: 0. Rating: 4.2/5.",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\product_catalog.html",
+      "product_id": "SP-002",
+      "name": "Chuột không dây ErgoMax",
+      "category": "Phụ kiện",
+      "price_vnd": null,
+      "stock": 0,
+      "rating": "4.2/5"
+    }
+  },
+  {
+    "document_id": "html-SP-003",
+    "content": "Product SP-003: Màn hình 4K 27\" ProDisplay in category Màn hình. Listed price: Liên hệ. Stock: 12. Rating: 4.9/5.",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\product_catalog.html",
+      "product_id": "SP-003",
+      "name": "Màn hình 4K 27\" ProDisplay",
+      "category": "Màn hình",
+      "price_vnd": null,
+      "stock": 12,
+      "rating": "4.9/5"
+    }
+  },
+  {
+    "document_id": "html-SP-004",
+    "content": "Product SP-004: Bàn phím cơ Blue Switch in category Phụ kiện. Listed price: 1,850,000 VND. Stock: -5. Rating: 4.5/5.",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\product_catalog.html",
+      "product_id": "SP-004",
+      "name": "Bàn phím cơ Blue Switch",
+      "category": "Phụ kiện",
+      "price_vnd": 1850000.0,
+      "stock": -5,
+      "rating": "4.5/5"
+    }
+  },
+  {
+    "document_id": "html-SP-005",
+    "content": "Product SP-005: Tai nghe chống ồn AI-Ear Pro in category Âm thanh. Listed price: 3,200,000 VND. Stock: 28. Rating: không có đánh giá.",
+    "source_type": "HTML",
+    "author": "Unknown",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\product_catalog.html",
+      "product_id": "SP-005",
+      "name": "Tai nghe chống ồn AI-Ear Pro",
+      "category": "Âm thanh",
+      "price_vnd": 3200000.0,
+      "stock": 28,
+      "rating": "không có đánh giá"
+    }
+  },
+  {
+    "document_id": "csv-1",
+    "content": "Sale record 1: Laptop VinAI Pro 14 sold on 2026-01-15 for 1200.0 USD.",
+    "source_type": "CSV",
+    "author": "S001",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Laptop VinAI Pro 14",
+      "category": "Electronics",
+      "price": 1200.0,
+      "currency": "USD",
+      "date_of_sale": "2026-01-15",
+      "seller_id": "S001",
+      "stock_quantity": "45"
+    }
+  },
+  {
+    "document_id": "csv-2",
+    "content": "Sale record 2: Wireless Mouse sold on 2026-01-15 for 250000.0 VND.",
+    "source_type": "CSV",
+    "author": "S002",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Wireless Mouse",
+      "category": "Electronics",
+      "price": 250000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-15",
+      "seller_id": "S002",
+      "stock_quantity": "120"
+    }
+  },
+  {
+    "document_id": "csv-3",
+    "content": "Sale record 3: USB-C Hub 7-Port sold on 2026-01-16 for N/A USD.",
+    "source_type": "CSV",
+    "author": "S003",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "USB-C Hub 7-Port",
+      "category": "Electronics",
+      "price": null,
+      "currency": "USD",
+      "date_of_sale": "2026-01-16",
+      "seller_id": "S003",
+      "stock_quantity": "0"
+    }
+  },
+  {
+    "document_id": "csv-4",
+    "content": "Sale record 4: Mechanical Keyboard sold on 2026-01-17 for 1500000.0 VND.",
+    "source_type": "CSV",
+    "author": "S004",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Mechanical Keyboard",
+      "category": "Electronics",
+      "price": 1500000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-17",
+      "seller_id": "S004",
+      "stock_quantity": "30"
+    }
+  },
+  {
+    "document_id": "csv-5",
+    "content": "Sale record 5: HDMI Cable 2m sold on 2026-01-17 for 5.0 USD.",
+    "source_type": "CSV",
+    "author": "S005",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "HDMI Cable 2m",
+      "category": "Accessories",
+      "price": 5.0,
+      "currency": "USD",
+      "date_of_sale": "2026-01-17",
+      "seller_id": "S005",
+      "stock_quantity": "200"
+    }
+  },
+  {
+    "document_id": "csv-6",
+    "content": "Sale record 6: Monitor 27 inch 4K sold on 2026-01-18 for 8500000.0 VND.",
+    "source_type": "CSV",
+    "author": "S001",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Monitor 27 inch 4K",
+      "category": "Electronics",
+      "price": 8500000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-18",
+      "seller_id": "S001",
+      "stock_quantity": "12"
+    }
+  },
+  {
+    "document_id": "csv-7",
+    "content": "Sale record 7: Webcam HD 1080p sold on 2026-01-19 for -350000.0 VND.",
+    "source_type": "CSV",
+    "author": "S002",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Webcam HD 1080p",
+      "category": "Electronics",
+      "price": -350000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-19",
+      "seller_id": "S002",
+      "stock_quantity": "55"
+    }
+  },
+  {
+    "document_id": "csv-8",
+    "content": "Sale record 8: SSD 1TB NVMe sold on 2026-01-19 for 2200000.0 VND.",
+    "source_type": "CSV",
+    "author": "S003",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "SSD 1TB NVMe",
+      "category": "Electronics",
+      "price": 2200000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-19",
+      "seller_id": "S003",
+      "stock_quantity": "88"
+    }
+  },
+  {
+    "document_id": "csv-9",
+    "content": "Sale record 9: Laptop Stand sold on 2026-01-20 for 450000.0 VND.",
+    "source_type": "CSV",
+    "author": "S004",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Laptop Stand",
+      "category": "Accessories",
+      "price": 450000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-20",
+      "seller_id": "S004",
+      "stock_quantity": ""
+    }
+  },
+  {
+    "document_id": "csv-10",
+    "content": "Sale record 10: Bluetooth Speaker sold on 2026-01-20 for 850000.0 VND.",
+    "source_type": "CSV",
+    "author": "S005",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 850000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-20",
+      "seller_id": "S005",
+      "stock_quantity": "40"
+    }
+  },
+  {
+    "document_id": "csv-11",
+    "content": "Sale record 11: Gaming Headset sold on 2026-01-21 for 1200000.0 VND.",
+    "source_type": "CSV",
+    "author": "S001",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Gaming Headset",
+      "category": "Electronics",
+      "price": 1200000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-21",
+      "seller_id": "S001",
+      "stock_quantity": "25"
+    }
+  },
+  {
+    "document_id": "csv-12",
+    "content": "Sale record 12: Power Bank 20000mAh sold on 2026-01-21 for 600000.0 VND.",
+    "source_type": "CSV",
+    "author": "S002",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Power Bank 20000mAh",
+      "category": "Accessories",
+      "price": 600000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-21",
+      "seller_id": "S002",
+      "stock_quantity": "70"
+    }
+  },
+  {
+    "document_id": "csv-13",
+    "content": "Sale record 13: Smart Watch VinHealth sold on 2026-01-22 for Liên hệ VND.",
+    "source_type": "CSV",
+    "author": "S003",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Smart Watch VinHealth",
+      "category": "Wearables",
+      "price": null,
+      "currency": "VND",
+      "date_of_sale": "2026-01-22",
+      "seller_id": "S003",
+      "stock_quantity": "15"
+    }
+  },
+  {
+    "document_id": "csv-14",
+    "content": "Sale record 14: Phone Case Premium sold on 2026-01-22 for 150000.0 VND.",
+    "source_type": "CSV",
+    "author": "S004",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Phone Case Premium",
+      "category": "Accessories",
+      "price": 150000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-22",
+      "seller_id": "S004",
+      "stock_quantity": "300"
+    }
+  },
+  {
+    "document_id": "csv-15",
+    "content": "Sale record 15: Laptop VinAI Pro 14 sold on 2026-01-22 for 1200.0 USD.",
+    "source_type": "CSV",
+    "author": "S001",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Laptop VinAI Pro 14",
+      "category": "Electronics",
+      "price": 1200.0,
+      "currency": "USD",
+      "date_of_sale": "2026-01-22",
+      "seller_id": "S001",
+      "stock_quantity": "45"
+    }
+  },
+  {
+    "document_id": "csv-16",
+    "content": "Sale record 16: Tablet 10 inch sold on 2026-01-23 for 5500000.0 VND.",
+    "source_type": "CSV",
+    "author": "S005",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Tablet 10 inch",
+      "category": "Electronics",
+      "price": 5500000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-23",
+      "seller_id": "S005",
+      "stock_quantity": "20"
+    }
+  },
+  {
+    "document_id": "csv-17",
+    "content": "Sale record 17: Earbuds TWS Pro sold on 2026-01-23 for 750000.0 VND.",
+    "source_type": "CSV",
+    "author": "S001",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Earbuds TWS Pro",
+      "category": "Electronics",
+      "price": 750000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-23",
+      "seller_id": "S001",
+      "stock_quantity": "60"
+    }
+  },
+  {
+    "document_id": "csv-18",
+    "content": "Sale record 18: Screen Protector sold on 2026-01-24 for 85000.0 VND.",
+    "source_type": "CSV",
+    "author": "S002",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "Screen Protector",
+      "category": "Accessories",
+      "price": 85000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-24",
+      "seller_id": "S002",
+      "stock_quantity": "500"
+    }
+  },
+  {
+    "document_id": "csv-19",
+    "content": "Sale record 19: External HDD 2TB sold on 2026-01-24 for 1800000.0 VND.",
+    "source_type": "CSV",
+    "author": "S003",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "External HDD 2TB",
+      "category": "Electronics",
+      "price": 1800000.0,
+      "currency": "VND",
+      "date_of_sale": "2026-01-24",
+      "seller_id": "S003",
+      "stock_quantity": "35"
+    }
+  },
+  {
+    "document_id": "csv-20",
+    "content": "Sale record 20: RAM DDR5 16GB sold on 2026-01-25 for NULL VND.",
+    "source_type": "CSV",
+    "author": "S004",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\sales_records.csv",
+      "product_name": "RAM DDR5 16GB",
+      "category": "Electronics",
+      "price": null,
+      "currency": "VND",
+      "date_of_sale": "2026-01-25",
+      "seller_id": "S004",
+      "stock_quantity": "42"
+    }
+  },
+  {
+    "document_id": "code-legacy-001",
+    "content": "Function calculate_discount: Business Logic Rule 001: \nIf customer tier is 'GOLD', apply 15% discount. \nIf tier is 'SILVER', apply 10% discount.\nOtherwise, no discount.\n\nIMPORTANT: Discounts are NOT cumulative with seasonal sales.\nFunction validate_transaction_id: No docstring provided.\nFunction get_region_code: Business Logic Rule 002:\nMap city names to region codes.\n- Hanoi -> 'HN'\n- Ho Chi Minh City -> 'HCM'\n- Da Nang -> 'DN'\n- Anything else -> 'OT' (Other)\nFunction legacy_tax_calc: No docstring provided.",
+    "source_type": "Code",
+    "author": "Legacy System",
+    "timestamp": null,
+    "source_metadata": {
+      "original_file": "C:\\Users\\thuan\\github-classroom\\GDGoCFPTU-Lab2-1\\lab-2-data-pipeline-multi-modal-minefield-overcome\\raw_data\\legacy_pipeline.py",
+      "function_count": 4,
+      "business_rules_found": []
+    }
+  }
+]
